@@ -19,16 +19,16 @@ public class Config {
      * Main Configuration Of Your WebViewGold App
      */
     // Domain host and subdomain without any https:// or http:// prefixes (e.g., "www.example.org")
-    public static final String HOST = "www.example.org";
+    public static final String HOST = "partneronline.net.ng";
 
     // Your URL including https:// or http:// prefix and including www. or any required subdomain (e.g., "https://www.example.org")
-    public static String HOME_URL = "https://www.example.org";
+    public static String HOME_URL = "https://www.partneronline.net.ng/";
 
     // Set to "false" to disable the progress spinner/loading spinner
     public static final boolean ACTIVATE_PROGRESS_BAR = true;
 
     // Set the phone orientation to either "portrait", "landscape", or "auto"
-    public static final String PHONE_ORIENTATION = "portrait";
+    public static final String PHONE_ORIENTATION = "auto";
 
     // Set the tablet orientation to either "portrait", "landscape", or "auto"
     public static final String TABLET_ORIENTATION = "portrait";
@@ -49,7 +49,7 @@ public class Config {
     public static final boolean FALLBACK_USE_LOCAL_HTML_FOLDER_IF_OFFLINE = false;
 
     // Set to (0) to open external links in-app by default; (1) to ALWAYS open in a new tab (an additional in-app browser); (2) to ALWAYS open in another browser
-    public static final int EXTERNAL_LINK_HANDLING_OPTIONS = 0;
+    public static final int EXTERNAL_LINK_HANDLING_OPTIONS = 1;
 
     // Set to (0) to open special links in-app; (1) in a new tab (an additional in-app browser); (2) in another browser
     // NOTE: Special links have a "_blank" target or end with "#"; Overrides EXTERNAL_URL_HANDLING_OPTIONS if the link is also an external link
@@ -74,7 +74,7 @@ public class Config {
     public static String[] NEVER_OPEN_IN_INAPP_TAB = new String[]{"www.neveropeninaninapptab.com"};
 
     // Set to (0) to open a scanned QR code URL in the app; (1) in an in-app tab; (2) in a new browser; (3) in an in-app tab if external; (4) in a new browser if external
-    public static final int QR_CODE_URL_OPTIONS = 0;
+    public static final int QR_CODE_URL_OPTIONS = 4;
 
     // Set to "true" in order to automatically set JavaScript variables; will eliminate the need to manually call methods like get-uuid://; currently, it supports loading the app version, OneSignal and Firebase player IDs, as well as the UUID
     public static final boolean AUTO_INJECT_VARIABLES = false;
@@ -116,10 +116,10 @@ public class Config {
     public static final boolean PREVENT_SLEEP = false;
 
     //Set to "true" to enable navigation by swiping left or right to move back or forward a page
-    public static final boolean ENABLE_SWIPE_NAVIGATE = false;
+    public static final boolean ENABLE_SWIPE_NAVIGATE = true;
 
     //Set to "true" to enable swiping down to refresh the page
-    public static final boolean ENABLE_PULL_REFRESH = false;
+    public static final boolean ENABLE_PULL_REFRESH = true;
 
     //Set to "false" to prevent zoom functionalities for the app user (works by additionally using script injection)
     public static final boolean ENABLE_ZOOM = true;
@@ -187,7 +187,7 @@ public class Config {
     // Set the minimum number of application launches before the "Rate this app" dialog will be displayed
     public static final int FACEBOOK_LAUNCHES_UNTIL_PROMPT = 4;
     // Set the URL of your Facebook page
-    public static final String FACEBOOK_URL = "https://www.facebook.com/OnlineAppCreator/";
+    public static final String FACEBOOK_URL = "https://www.facebook.com/profile.php?id=61572902971913";
 
     // Set to "false" to prevent the "Download images" pop-up box from appearing when long-pressing on an image
     public static final boolean ALLOW_IMAGE_DOWNLOAD = true;
